@@ -1,5 +1,5 @@
 :root{
-    font-size: 13px;
+    font-size: 10px;
     --ieee-orange:#FFA300;
     --ieee-blue:#00629b;
     --ieee-cyan:#00b5e2;
@@ -80,7 +80,7 @@ button{
     background-color: var(--ieee-white);
     color:var(--ieee-cyan);
     border-color: var(--ieee-cyan);
-    border-radius: 1.5em;
+    border-radius:1rem;
     box-shadow: none;
     padding: 1rem 2rem;
     border-style: solid;
@@ -89,24 +89,40 @@ button:hover{
     color:var(--ieee-white);
     background-color: var(--ieee-cyan);
 }
+button.f-orange{
+    background-color: var(--ieee-white);
+    color:var(--ieee-cyan);
+    border-color: var(--ieee-cyan);
+}
 button.filled{
     font-size: 14px;
     letter-spacing: 1.25px;
     text-transform: uppercase;
     font-weight: 400;
     transition: all 0.3s ease 0s;
-    background-color: var(--ieee-cyan);
+    background-color: var(--ieee-blue);
     color:var(--ieee-white);
-    border-color: var(--ieee-cyan);
-    border-radius: 1.5em;
+    border-color: var(--ieee-blue);
     box-shadow: none;
     padding: 1rem 2rem;
     border-style: solid;
 }
 button.filled:hover{
     color:var(--ieee-white);
+    background-color: var(--ieee-cyan);
+    border-color: var(--ieee-cyan);
+    cursor: pointer;
+}
+button.filled.f-orange{
     background-color: var(--ieee-orange);
+    color:var(--ieee-white);
     border-color: var(--ieee-orange);
+}
+button.filled.f-orange:hover{
+    color:var(--ieee-white);
+    background-color:hsl(38, 100%, 50%);
+    border-color:hsl(38, 100%, 50%);
+    cursor: pointer;
 }
 caption{
     font-family: 'Open Sans', sans-serif;
@@ -119,10 +135,22 @@ caption{
     letter-spacing: 1.5px;
 }
 header{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 10%;
+    transition: all 0.3s ease 0;
+    overflow: hidden;
+    height: 10vh;
+    background: rgb(255,255,255,0.95);
+    z-index: 10;
 }
 .nav__links li{
     display: inline-block;
@@ -133,9 +161,55 @@ header{
 }
 .nav__links li a:hover{
     transition: all 0.3s ease 0s;
-    color: var(--ieee-orange)
+    color: var(--ieee-cyan)
+}
+main{
+    margin-top: 10vh;
 }
 section{
     height: 100vh;
     padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+section.contact-section{
+    height: 80vh;
+}
+section.info-section{
+    height: 90vh;
+}
+.txt-blue{
+    color:var(--ieee-blue)
+}
+.txt-cyan{
+    color: var(--ieee-cyan);
+}
+.txt-orange{
+    color: var(--ieee-orange);
+}
+.txt-white{
+    color: var(--ieee-white);
+}
+.txt-black{
+    color: #000000;
+}
+footer{
+    background-color: var(--ieee-black);
+    text-overflow: hidden;
+    height: 20vh;
+    padding: 4rem;
+}
+.section-header{
+    text-align: center;
+    display: block;
+    overflow: hidden;
+}
+img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: fill;
+}
+.section-content{
+    padding-top: 5rem;
 }

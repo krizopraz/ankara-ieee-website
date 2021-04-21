@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>IEEE Ankara Computer Society</title>
 </head>
 <body>
     <header>
-        <div class="logo"><h5>LOGO</h5></div>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
+            <div class="logo"><h5>LOGO</h5></div>
             <ul class="nav__links">
                 <li><h6><a href="">Link</a></h6></li>
                 <li><h6><a href="">Link</a></h6></li>
                 <li><h6><a href="">Link</a></h6></li>
                 <li><h6><a href="">Link</a></h6></li>
             </ul>
+            <div class="contact"><button class="filled">aramıza katıl</button></div>
         </nav>
-        <div class="contact"><button class="filled">aramıza katıl</button></div>
     </header>
     <main>
-        <section class='info-section'>
-            <h3>this is info section</h3>
+        <section id='info' class='info-section'>
+            <div class="section-header">
+                <h3>IEEE ANKU <br> <span class="txt-orange">Computer Society</span></h3>
+
+            </div>
+            <div class="section-content body-two">
+                <span></span>
+            </div>
         </section>
         <hr>
-        <section class='content-section'>
-            <h3>This is content Section</h3>
+        <section id='content' class='content-section'>
+            <div><h3>This is Content Section</h3></div>
         </section>
         <hr>
-        <section class='contact-section'>
+        <section id="contact" class='contact-section'>
             <h3>This is contact section</h3>
         </section>
     </main>
-    <footer class='footer'>
-        <span><h4>This is a footer</h4></span>
+    <footer>
+        <span ><h4 class="txt-white">This is a footer</h4></span>
+        <p class="txt-white">test</p>
     </footer>
-
+    <script src="assets/js/sticky.js"></script>
 </body>
 </html>
