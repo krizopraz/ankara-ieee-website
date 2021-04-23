@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/termynal.css">
     <title>IEEE Ankara Computer Society</title>
 </head>
 
@@ -51,7 +52,18 @@
 
             </div>
             <div class="section-content body-two">
-                <span></span>
+                <div class="terminal" data-termynal id="terminal">
+                    <span data-ty="input">node cs.js</span>
+                    <span data-ty data-ty-delay="0">İçerikler Taranıyor ...</span>
+                    <span data-ty="progress" data-ty-progressPercent='100'></span>
+                    <span data-ty="">İçerikler Bulundu</span>
+                    <span data-ty="">Hızlı gezinti : </span>
+                    <a href="#"data-ty-delay='20' class='terminal-link' data-ty="prompt">Test Link</a>
+                    <a href="#"data-ty-delay='20' class='terminal-link' data-ty="prompt">Test Link</a>
+                    <a href="#"data-ty-delay='20' class='terminal-link' data-ty="prompt">Test Link</a>
+                    <a href="#"data-ty-delay='20' class='terminal-link' data-ty="prompt">Test Link</a>
+                    <a href="#"data-ty-delay='20' class='terminal-link' data-ty="prompt">Test Link</a>
+                </div>
             </div>
         </section>
         <hr>
@@ -71,9 +83,12 @@
         </span>
         <p class="txt-white">test</p>
     </footer>
+
+    <!--# Script Alanı #-->
     <script src="assets/js/sticky.js"></script>
     <script src="assets/js/jumping.js"></script>
     <script src="assets/js/anime1.js"></script>
+    <script src="assets/js/termynal.min.js" data-termynal-container="#terminal"></script>
 </body>
 
 </html>

@@ -504,3 +504,11 @@ img {
     text-transform: uppercase;
     text-align: center;
 }
+.terminal-link:hover{
+    text-decoration: underline solid  #0295eb;
+    width: max-content;
+}
+.tippy-box{
+    color: white;
+    background-color: #00b5e2
+}
