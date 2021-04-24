@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Source+Sans+Pro&display=swap');
 :root {
     font-size: 10px;
     --ieee-orange: #FFA300;
@@ -6,6 +7,10 @@
     --ieee-black: #000000;
     --ieee-white: #ffffff;
     --ieee-grey: #75787b;
+    --mont:'Montserrat', sans-serif;
+    --open:'Open Sans', sans-serif;
+    --source:'Source Sans Pro', sans-serif;
+    --pop:'Poppins',sans-serif ;
 }
 
 * {
@@ -23,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family:var(--mont);
     text-transform: none;
 }
 
@@ -61,31 +66,31 @@ h6 {
 }
 
 .subtitle-one {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--mont);
     font-size: 16px;
     letter-spacing: 0.15px;
 
 }
 
 .subtitle-two {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--mont);
     font-size: 14px;
     letter-spacing: 0.1px;
     font-weight: 500;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--open)
 }
 
 .body-one {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--open);
     font-size: 16px;
     letter-spacing: 0.5px;
 }
 
 .body-two {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--open);
     font-size: 14px;
     letter-spacing: 0.25px;
 }
@@ -103,7 +108,8 @@ button {
     box-shadow: none;
     padding: 1rem 2rem;
     border-style: solid;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500;
 }
 
 button:hover {
@@ -153,14 +159,14 @@ button.filled.f-orange:hover {
 }
 
 caption {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--open);
     font-size: 12px;
     letter-spacing: 0.4px;
 }
 
 .overline {
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--open);
     letter-spacing: 1.5px;
 }
 
@@ -205,17 +211,19 @@ main {
 section {
     height: 100vh;
     padding: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
 }
-
+section.content-section{
+    height: 200vh;
+}
 section.contact-section {
     height: 80vh;
 }
 
 section.info-section {
     height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
 }
 
 .txt-blue {
@@ -236,6 +244,9 @@ section.info-section {
 
 .txt-black {
     color: #000000;
+}
+div.divisions :nth-child(1){
+    color: #00629b;
 }
 
 footer {
@@ -261,6 +272,11 @@ img {
 .section-content {
     padding-top: 5rem;
 }
+.divisions{
+    display: inline-block;
+}
+
+
 
 /* section header animation*/
 @import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
