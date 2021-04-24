@@ -189,6 +189,13 @@ nav {
     background: rgb(255, 255, 255, 0.95);
     z-index: 10;
 }
+.moving{
+    opacity: 0;
+    transition: all 1s ease 0;
+}
+.moving:hover{
+    opacity: 100;
+}
 
 .nav__links li {
     display: inline-block;
@@ -274,6 +281,23 @@ img {
 }
 .divisions{
     display: inline-block;
+}
+.duyuru-section{
+    margin-top: 4rem;
+    text-align: center;
+}
+.duyurular{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+.duyurular__duyuru{
+    padding: 3rem;
+    margin: 1rem;
+    border: solid var(--ieee-blue) 0.1rem;
+    align-items: center;
+    text-align: center;
 }
 
 

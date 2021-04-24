@@ -5,9 +5,9 @@
  * @version 0.0.1
  * @license MIT
  */
-
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 :root {
-    --color-bg: #252a33;
+    --color-bg: #121212;
     --color-text: #eee;
     --color-text-subtle: #a2a2a2;
 }
@@ -18,7 +18,7 @@
     background: var(--color-bg);
     color: var(--color-text);
     font-size: 18px;
-    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    font-family: 'Source Sans Pro','Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
     border-radius: 4px;
     padding: 75px 45px 35px;
     position: relative;
